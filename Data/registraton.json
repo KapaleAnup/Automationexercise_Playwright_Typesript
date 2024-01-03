@@ -1,0 +1,15 @@
+{
+    "name": "AutomationUser",
+    "email": "automationUser@test.com",
+    "password": "Automation@1234",
+    "firstName": "Automation",
+    "lastName": "User",
+    "company": "DemoCompany",
+    "country": "India",
+    "address": "Test address",
+    "address2": "near test data",
+    "state": "TamilNadu",
+    "city": "Chennai",
+    "zipcode": "600001",
+    "mobileNumber": "6000000001"
+}
