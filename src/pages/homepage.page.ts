@@ -11,9 +11,10 @@ export default class HomePage {
     readonly deleteAccountBtn: Locator
     readonly deleteMessage_text: Locator
 
-
     readonly successMessage_text: Locator
     readonly countinueBtn: Locator
+
+    readonly contactusBtn: Locator
 
     constructor(page: Page) {
         this.page = page
@@ -26,6 +27,8 @@ export default class HomePage {
 
         this.deleteAccountBtn = page.locator("a[href='/delete_account']")
         this.deleteMessage_text = page.locator("h2[class='title text-center'] b")
+
+        this.contactusBtn = page.locator("a[href='/contact_us']")
     }
 
     async checkHeaders() {
@@ -44,7 +47,7 @@ export default class HomePage {
     }
 
     async getUserName() {
-        return await this.userName.textContent();
+        return await this.userName?.textContent();
     }
 
 
@@ -72,5 +75,9 @@ export default class HomePage {
         } else {
             throw new Error(`Delete Message is not matching..`)
         }
+    }
+
+    async clickOnContactUsPage() {
+        await this.contactusBtn.click()
     }
 }

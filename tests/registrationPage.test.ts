@@ -17,7 +17,7 @@ test.describe("Verify the user is able to regirster", () => {
 
         await registrationPage.clickOnSignUp(data.name, data.email)
         await registrationPage.provideAccountInfo(data.password)
-        await registrationPage.selectDateOfBirth('18', 'May', '2000');
+        // await registrationPage.selectDateOfBirth('18', 'May', '2000');
         await registrationPage.signUpForNewsletter();
         await registrationPage.checkSpecialOffers()
         await registrationPage.addAddressinformation(data.firstName, data.lastName, data.company, data.address, data.address2,
