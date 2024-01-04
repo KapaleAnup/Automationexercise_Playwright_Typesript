@@ -16,6 +16,8 @@ test.describe('Verify the user is able to login', () => {
 
         let userName = await homePage.getUserName()
 
+        await homePage.deleteCreatedAccount();
+        await homePage.deleteMessage()
 
     })
 })
